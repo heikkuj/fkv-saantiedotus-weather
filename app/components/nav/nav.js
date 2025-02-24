@@ -22,9 +22,9 @@ export default function Nav() {
       <nav className={`${styles.menuList} ${openMenu ? styles.open : ''}`}>
         <ul>
           <li><a href='#'>Etulaita</a></li>
-          <li><a href='#'>Kaks</a></li>
+          <li><a href='#'>Kaksi</a></li>
           <li><a href='#'>Kolme</a></li>
-          <li><a href='#'>Nelje</a></li>
+          <li><a href='#'>Neljä</a></li>
         </ul>
       </nav>
     </>
