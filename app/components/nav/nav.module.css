@@ -23,8 +23,9 @@
 /* Nav menu backdrop */
 .menuList {
     position: fixed;
-    left: -270px; /* Inital off-screen */
-    width: 250px;
+    left: -100vw; /* Inital off-screen */
+    width: 45vw;
+    max-width: 300px;
     height: 100%;
 
     background-color: rgba(145, 150, 214, 0.179);

@@ -16,6 +16,13 @@
     background: rgb(180,186,255);
     background: linear-gradient(331deg, rgba(180,186,255,1) 0%, rgba(186,238,243,1) 100%);
 
+    box-shadow: 
+    /* INNER SHADOWS */
+    inset -10px -10px 20px rgb(188, 206, 255), 
+    /* OUTER SHADOWS */ 
+    10px 12px 15px rgba(73, 107, 171, 0.232), 
+    -10px -12px 15px rgba(193, 222, 255, 0.236);
+
 }
 
 .degrees {
