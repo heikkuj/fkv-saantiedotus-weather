@@ -33,9 +33,10 @@ export default function Nav() {
             <li><a href='#'>/a></li>
             <li><a href='#'></a></li> */}
         </ul>
-        <div className='absolute !p-[10px] bottom-0 text-center'>
-          <p className='text-white font-poppins text-[0.8em]'>Powered by <a href="https://www.weatherapi.com/" title="Free Weather API">WeatherAPI.com</a></p>
-          <p className='!my-[5px] text-white font-poppins text-[0.8em]'>Created by <a href="https://github.com/heikkuj" target='_blank'>Heikku J.</a></p>
+        <div className='absolute w-full !p-[10px] bottom-0 text-center left-[50%] translate-x-[-50%] drop-shadow-[1px_4px_5px_rgba(0,0,0,0.266)] text-white font-poppins text-[0.7em]'>
+
+          <p>Powered by <a href="https://www.weatherapi.com/" title="Free Weather API" className='underline'>WeatherAPI.com</a></p>
+          <p className='!my-[5px]'>Created by <a href="https://github.com/heikkuj" target='_blank' className='underline'>Heikku J.</a></p>
         </div>
       </nav>
     </>
