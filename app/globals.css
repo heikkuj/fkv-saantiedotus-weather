@@ -18,8 +18,10 @@
 }
 
 body {
-  min-height: 100vh;
+  height: 100%;
   background: #5e2fe9;
   background: linear-gradient(0deg, rgba(94,47,233,1) 0%, #baeef3 100%);
+  background-repeat: no-repeat;
+  background-attachment: fixed;
 
 }
