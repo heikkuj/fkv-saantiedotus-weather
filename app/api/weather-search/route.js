@@ -16,9 +16,6 @@ export async function GET(request) {
         // API URL with parameters
         const apiUrl = `https://api.weatherapi.com/v1/forecast.json?key=${API_KEY}&q=${query}&days=${days}&aqi=${aqi}&alerts=${alerts}`;
 
-        // REMOVE THIS (first line below comment)
-        console.log(`Fetching weather data for: ${query}`);
-
         const response = await fetch(apiUrl);
 
         // If error
@@ -96,8 +93,6 @@ export async function GET(request) {
           // Return transformed data
           return NextResponse.json(transformedData);
         } catch (error) {
-          // REMOVE THIS (first line after comment)
-          console.error('Error fetching weather data:', error);
           
         return NextResponse.json(
             { error: 'Failed to fetch weather data. Please try again later.' },

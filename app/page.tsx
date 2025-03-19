@@ -8,6 +8,7 @@ export default function Home() {
   return (
     <div className='flex justify-center items-center flex-col'>
       <Title />
+      <div className='!m-[20px]'></div>
       <Search  />
     </div>
   )
