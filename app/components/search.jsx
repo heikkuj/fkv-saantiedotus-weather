@@ -45,7 +45,7 @@ export default function Search() {
             </div>
         )}
 
-        <form onSubmit={searchWeather} className='flex flex-col lg:flex-row lg:items-center lg:gap-2 max-w-[600px]'>
+        <form onSubmit={searchWeather} className='flex flex-col lg:flex-row lg:items-center lg:gap-2 max-w-[600px] overflow-visible !pb-[10px]'>
             <input 
             type='search' 
             value={query}
@@ -64,7 +64,7 @@ export default function Search() {
 
         {weather && (
             // LOCATION
-            <div className='!mt-4 !p-4 flex-col'>
+            <div className='md:!mt-[10px] lg:!mt-[10px] !p-4 flex-col'>
                 {/* <div className='h-full w-[50vw] max-w-[600px] !p-4 font-sawarabi text-center uppercase bg-white rounded-full shadow-[1px_4px_5px_rgba(0,0,0,0.266)]'>
                 <h2 className='font-semibold text-l'>
                     {weather.location.name}
@@ -83,7 +83,7 @@ export default function Search() {
 
                     {/* WEATHER ICON */}
                     <img src={`https:${weather.current.condition.icon}`}
-                    alt={weather.current.condition.text} className='place-self-center lg:!pb-[20px]'/>
+                    alt={weather.current.condition.text} className='place-self-center lg:!pt-[20px]'/>
 
                     {/* TEMPERATURE */}
                     <p className='font-semibold text-[2em] md:text-[3em] lg:text-[3.5em]'>{weather.current.temp_c}°C</p>
