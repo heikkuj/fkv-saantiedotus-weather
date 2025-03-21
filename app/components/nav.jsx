@@ -21,7 +21,7 @@ export default function Nav() {
       </div>
 
       {/* Sidebar */}
-      <nav className={`fixed w-[45vw] max-w-[300px] h-screen z-40 bg-glass backdrop-blur-xs shadow-[1px_1px_8px_rgba(42, 42, 42, 0.38)] transition-transform ease-in-out duration-700 ${isMenuOpen ? "translate-x-0" : "-translate-x-full"}`}>
+      <nav className={`fixed w-[45vw] max-w-[300px] h-full z-40 bg-glass backdrop-blur-xs shadow-[1px_1px_8px_rgba(42, 42, 42, 0.38)] transition-transform ease-in-out duration-700 ${isMenuOpen ? "translate-x-0" : "-translate-x-full"}`}>
 
         <ul className='!p-[70px] text-left list-none font-poppins text-white text-[1.3em]'>
 
@@ -35,8 +35,8 @@ export default function Nav() {
         </ul>
         <div className='absolute w-full !p-[10px] bottom-0 text-center left-[50%] translate-x-[-50%] drop-shadow-[1px_4px_5px_rgba(0,0,0,0.266)] text-white font-poppins text-[0.7em]'>
 
+        <p className='!my-[5px]'>Created by <a href="https://github.com/heikkuj" target='_blank' className='underline'>Heikku J.</a></p>
           <p>Powered by <a href="https://www.weatherapi.com/" title="Free Weather API" className='underline'>WeatherAPI.com</a></p>
-          <p className='!my-[5px]'>Created by <a href="https://github.com/heikkuj" target='_blank' className='underline'>Heikku J.</a></p>
         </div>
       </nav>
     </>

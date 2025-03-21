@@ -19,6 +19,7 @@
 
 body {
   height: 100%;
+  min-width: 300px;
   background: #5e2fe9;
   background: linear-gradient(0deg, rgba(94,47,233,1) 0%, #baeef3 100%);
   background-repeat: no-repeat;
