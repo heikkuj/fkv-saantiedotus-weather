@@ -65,12 +65,7 @@ export default function Search() {
         {weather && (
             // LOCATION
             <div className='md:!mt-[10px] lg:!mt-[10px] !p-4 flex-col'>
-                {/* <div className='h-full w-[50vw] max-w-[600px] !p-4 font-sawarabi text-center uppercase bg-white rounded-full shadow-[1px_4px_5px_rgba(0,0,0,0.266)]'>
-                <h2 className='font-semibold text-l'>
-                    {weather.location.name}
-                </h2>
-                <h3 className='normal-case !mt-1'>{weather.location.country}</h3>
-            </div> */}
+                
             <div className='h-full w-[50vw] max-w-[600px] place-self-center !p-4 font-sawarabi text-center uppercase text-white drop-shadow-[1px_4px_5px_rgba(0,0,0,0.266)]'>
                 <h2 className='font-semibold text-[1.5em] lg:text-[2em]'>
                     {weather.location.name}
@@ -83,11 +78,11 @@ export default function Search() {
 
                     {/* WEATHER ICON */}
                     <img src={`https:${weather.current.condition.icon}`}
-                    alt={weather.current.condition.text} className='place-self-center lg:!pt-[20px]'/>
+                    alt={weather.current.condition.text} className='place-self-center lg:!pt-[20px] !mb-[-10px]'/>
 
                     {/* TEMPERATURE */}
                     <p className='font-semibold text-[2em] md:text-[3em] lg:text-[3.5em]'>{weather.current.temp_c}°C</p>
-                    <p className='!p-[15px] lg:!p-[30px] md:text-[1.3em] lg:text-[1.5em]'>{weather.current.condition.text}</p>
+                    <p className=' md:text-[1.2em] lg:text-[1.25m] text-[1em] !mb-[20px]'>{weather.current.condition.text}</p>
                 </div>
             </div>
 
